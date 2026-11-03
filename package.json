@@ -1,0 +1,6 @@
+{
+  "name": "drone-data-studio", "version": "0.1.0", "type": "module", "private": true,
+  "description": "No-upload, browser-only drone telemetry and point-cloud conversion dashboard",
+  "scripts": { "test": "node --test tests/*.test.js", "serve": "python -m http.server 8080" },
+  "license": "MIT"
+}
