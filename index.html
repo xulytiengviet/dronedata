@@ -2,16 +2,17 @@
 <html lang="vi">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="color-scheme" content="dark"><meta name="theme-color" content="#09111c">
+  <meta name="color-scheme" content="light"><meta name="theme-color" content="#faf9f5">
   <meta name="description" content="Drone Data Studio: chuyển đổi telemetry drone và LAS ngay trong trình duyệt. Không tải dữ liệu lên máy chủ.">
   <title>Drone Data Studio · Local-first converter</title>
   <link rel="stylesheet" href="./src/styles.css">
+  <link rel="stylesheet" href="./src/readme-theme.css">
 </head>
 <body>
 <div class="app-shell">
  <aside class="sidebar" aria-label="Điều hướng">
-  <div class="brand"><span class="brand-mark">⬡</span><div><strong>DRONE<span>DATA</span></strong><small>STUDIO / LOCAL</small></div></div>
-  <div class="nav-caption">WORKSPACE</div>
+  <div class="brand"><span class="brand-mark">#</span><div><strong>DRONE<span>DATA</span></strong><small>README / LOCAL</small></div></div>
+  <div class="nav-caption">CONTENTS</div>
   <nav class="navlinks">
    <a class="active" href="#overview"><span class="navico">▦</span> Tổng quan <span class="nav-arrow">↗</span></a>
    <a href="#converter"><span class="navico">⇄</span> Chuyển đổi dữ liệu</a>
@@ -22,14 +23,25 @@
   </nav>
   <div class="nav-caption second">QUYỀN RIÊNG TƯ</div>
   <div class="privacy-side"><span class="status-dot"></span><strong>Xử lý tại thiết bị</strong><p>Không có API upload, tracking, tài khoản hay cơ sở dữ liệu máy chủ.</p><span class="mini-tag">OFFLINE CAPABLE</span></div>
-  <div class="side-bottom"><div class="line"></div><div class="side-version"><span>build 0.1.0</span><span>MIT / 2026</span></div><p>Local by default.<br>Data belongs to you.</p></div>
+  <div class="side-bottom"><div class="line"></div><div class="side-version"><span>build 0.1.1</span><span>MIT / 2026</span></div><p>Local by default.<br>Data belongs to you.</p></div>
  </aside>
  <main class="content" id="overview">
-  <header class="topbar"><div class="crumb">DASHBOARD <span>/</span> FLIGHT DATA WORKSPACE</div><div class="top-right"><span class="top-chip"><span class="green-dot"></span> NO CLOUD UPLOAD</span><span class="top-clock" id="localClock">LOCAL PC</span><button class="mobile-menu" id="mobileMenu" aria-label="Hiện hoặc ẩn menu">☰</button></div></header>
+  <header class="topbar"><div class="crumb">README.md <span>/</span> DRONE DATA WORKSPACE</div><div class="top-right"><span class="top-chip"><span class="green-dot"></span> NO CLOUD UPLOAD</span><span class="top-clock" id="localClock">LOCAL PC</span><button class="mobile-menu" id="mobileMenu" aria-label="Hiện hoặc ẩn menu">☰</button></div></header>
   <div class="page-body">
    <section class="hero">
-    <div><div class="eyebrow"><span class="eyebrow-line"></span> OPEN DRONE INTEROPERABILITY · V0.1</div><h1>Mọi dữ liệu drone.<br><em>Một nơi chuyển đổi.</em></h1><p>Kết nối thế giới UAV với PC, GIS, TAK và hệ thống phân tích — theo cách <strong>local-first</strong>. Thả tệp vào trình duyệt, chuẩn hóa telemetry, xem quỹ đạo và tải đầu ra về máy.</p><div class="hero-actions"><a class="primary-btn" href="#converter">↗ BẮT ĐẦU CHUYỂN ĐỔI</a><a class="ghost-btn" href="#catalog">XEM BẢNG TƯƠNG THÍCH <span>→</span></a></div></div>
-    <div class="hero-visual" aria-hidden="true"><div class="orb orb1"></div><div class="orb orb2"></div><svg class="hero-grid-svg" viewBox="0 0 410 265"><defs><pattern id="gridpat" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M 28 0 L 0 0 0 28" fill="none" stroke="#23444b" stroke-width=".6"/></pattern></defs><rect width="410" height="265" fill="url(#gridpat)"/><circle cx="205" cy="130" r="84" stroke="#42837d" stroke-width="1" fill="none" stroke-dasharray="5 7"/><circle cx="205" cy="130" r="57" stroke="#42837d" stroke-width="1" fill="none"/><path d="M83 182 C143 198 163 97 223 115 S293 64 340 84" stroke="#82f3b2" stroke-width="2.4" fill="none" stroke-dasharray="7 6"/><circle cx="83" cy="182" r="4" fill="#86f8be"/><circle cx="340" cy="84" r="4" fill="#86f8be"/><g fill="none" stroke="#b6eed3" stroke-width="3" transform="translate(203 121)"><circle r="19"/><path d="M-18 -18l-24 -17m60 17 24 -17m-60 53-24 17m60-17 24 17"/><circle cx="-43" cy="-37" r="8"/><circle cx="43" cy="-37" r="8"/><circle cx="-43" cy="37" r="8"/><circle cx="43" cy="37" r="8"/></g></svg><div class="hero-floating top">◉ <span>TELEMETRY <b>INGEST</b></span></div><div class="hero-floating bottom"><span>GPS FIX</span><strong>● 3D LOCK</strong><span>LAT · LON · ALT</span></div></div>
+    <div><div class="eyebrow"><span class="eyebrow-line"></span> <span class="accent"># drone-data / README</span></div><h1># Mọi dữ liệu drone.<br><em>Một nơi chuyển đổi.</em></h1><p>Kết nối thế giới UAV với PC, GIS, TAK và hệ thống phân tích — theo cách <strong>local-first</strong>. Thả tệp vào trình duyệt, chuẩn hóa telemetry, xem quỹ đạo và tải đầu ra về máy.</p><div class="hero-actions"><a class="primary-btn" href="#converter">↗ BẮT ĐẦU CHUYỂN ĐỔI</a><a class="ghost-btn" href="#catalog">XEM BẢNG TƯƠNG THÍCH <span>→</span></a></div></div>
+    <div class="hero-readme-console" aria-label="Sơ đồ quy trình chuyển đổi minh họa"><div class="console-bar"><span>README.md / pipeline</span><span>● LOCAL-ONLY</span></div><pre>01 / INPUT
+     DJI .SRT  ·  PX4 .ULG
+     ArduPilot .BIN  ·  LiDAR .LAS
+          │
+          ▼
+02 / DECODE + NORMALIZE
+     Timestamp · GPS · Altitude
+          │
+          ▼
+03 / EXPORT
+     CSV · KML · GPX · GeoJSON
+     CoT XML · JSON · MQTT JSONL</pre><div class="console-caption">$ drone-data --local --no-upload</div></div>
    </section>
    <section class="metrics" aria-label="Thống kê tính năng"><article class="metric-card"><span class="metric-icon green">⌁</span><div><small>DRONE / NỀN TẢNG</small><b>12<span>+</span></b><p>Nhóm thiết bị tham khảo</p></div></article><article class="metric-card"><span class="metric-icon blue">▧</span><div><small>INPUT FORMATS</small><b>9<span> core</span></b><p>SRT · CSV · ULog · BIN · LAS…</p></div></article><article class="metric-card"><span class="metric-icon amber">⇥</span><div><small>OUTPUT FORMATS</small><b>9<span> core</span></b><p>CSV · KML · GPX · CoT…</p></div></article><article class="metric-card"><span class="metric-icon purple">◉</span><div><small>SERVER STORAGE</small><b>0<span> bytes</span></b><p>Dữ liệu ở phiên trình duyệt</p></div></article></section>
    <section class="section" id="converter"><div class="section-heading"><div><div class="kicker">01 / DATA PIPELINE</div><h2>Trạm chuyển đổi</h2><p>Chọn nguồn, kéo tệp từ PC và xuất sang định dạng cần sử dụng.</p></div><span class="section-status"><span class="green-dot"></span> BROWSER EXECUTION</span></div>
@@ -67,7 +79,7 @@
     <div class="protocol-grid"><div class="protocol-col"><span class="p-label">INPUT</span><div>DJI SRT / MP4 metadata</div><div>PX4 ULog / ArduPilot BIN</div><div>LAS / CSV / GeoJSON</div><div>MAVLink / Remote ID*</div></div><div class="protocol-center"><span>⇢</span><strong>DRONE DATA<br>CANONICAL MODEL</strong><small>Time · GPS · Altitude · Source</small><span>⇢</span></div><div class="protocol-col"><span class="p-label">OUTPUT</span><div>CSV / JSON / NDJSON</div><div>GeoJSON / GPX / KML</div><div>CoT XML / XML canonical</div><div>MQTT envelope / Parquet*</div></div></div><div class="protocol-caveat">* MAVLink/Remote ID truyền trực tiếp, Parquet writer, LAZ/PDAL, ROS bag và MQTT live cần adapter chuyên dụng. Bản này KHÔNG giả lập kết nối mạng hay xuất Parquet giả.</div>
    </section>
    <section class="section" id="references"><div class="section-heading"><div><div class="kicker">05 / OPEN SOURCE REFERENCES</div><h2>Hệ sinh thái tham khảo</h2><p>Kiến trúc tham khảo; mã nguồn giao diện và bộ parser trong gói này được viết riêng.</p></div></div><div class="ref-grid"><a target="_blank" rel="noopener" href="https://github.com/iannil/open-uav-telemetry-bridge"><span>BRIDGE / GATEWAY</span><strong>Open UAV Telemetry Bridge ↗</strong><p>MAVLink / DJI → MQTT, WS, HTTP (ý tưởng cho adapter sau này)</p></a><a target="_blank" rel="noopener" href="https://github.com/B-ushra/NDIEM-A-Networked-Drone-Information-Exchange-Model-for-Heterogenous-Drones"><span>SCHEMA / CANONICAL</span><strong>NDIEM ↗</strong><p>Mô hình dữ liệu liên thông drone dị thể; XML ở bản này là schema riêng</p></a><a target="_blank" rel="noopener" href="https://github.com/alphafox02/DragonSync"><span>DETECTION / TAK</span><strong>DragonSync ↗</strong><p>Drone detection / Remote ID → CoT và MQTT, khác telemetry bay nội bộ</p></a><a target="_blank" rel="noopener" href="https://pypi.org/project/dji-drone-metadata-embedder/2.16.0/"><span>DJI / SRT</span><strong>DJI Metadata Embedder ↗</strong><p>SRT → CSV, GPX, KML, GeoJSON, CoT ở CLI tham khảo</p></a><a target="_blank" rel="noopener" href="https://github.com/PX4/flight-review-rs"><span>ULOG / PARQUET</span><strong>PX4 Flight Review Rust ↗</strong><p>Converter ULog → Parquet; bản tham khảo có workflow server riêng</p></a><a target="_blank" rel="noopener" href="https://github.com/OpenDroneMap/ODM"><span>PHOTOGRAMMETRY</span><strong>OpenDroneMap ↗</strong><p>Pipeline tạo point cloud, DEM, orthophoto từ ảnh UAV</p></a></div></section>
-   <footer class="footer"><div><strong>DRONE DATA STUDIO</strong> <span>· Local-first data interoperability</span></div><span>Open source · Không upload dữ liệu · MIT</span></footer>
+   <footer class="footer"><div><strong>DRONE DATA STUDIO</strong> <span>· Local-first data interoperability</span></div><span>README Studio UI · Long Ngo · Không upload dữ liệu · MIT</span></footer>
   </div>
  </main>
 </div>
